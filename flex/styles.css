@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100vh;
+    background: wheat;
+
+    /* row, nowrap, justify-start,align-stretch */
+    display: flex;
+
+}
+
+.left {
+    background: green;
+    flex-grow: 1;
+}
+
+.right {
+    /* background: orangered; */
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column;  //Another way to stretch the right form to fully occypy the remaining area*/
+}
+
+form {
+    /* //One way to stretch the right form */
+    flex-grow: 1;
+
+    height: 50vh;
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

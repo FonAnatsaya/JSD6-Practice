@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    background: wheat;
+    height: 100vh;
+}
+
+.app_header {
+    background: wheat;
+    height: 64px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.app_content {
+    background: white;
+    flex-flow: row wrap;
+}
+
+.app_footer {
+    background: wheat;
+    height: 64;
+}
